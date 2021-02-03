@@ -7,5 +7,6 @@
 Scenario: Example Steps
 	Given the first number is 50
 	And the second number is 70
+	And I added the second number
 	When the two numbers are added
 	Then the result should be 120

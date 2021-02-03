@@ -41,5 +41,12 @@ namespace OrangeHRM.StepDefinition
         {
             ScenarioContext.Current.Pending();
         }
+
+        [Given(@"I added the second number")]
+        public void GivenIAddedTheSecondNumber()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }
