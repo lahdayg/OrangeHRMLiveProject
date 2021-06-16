@@ -18,13 +18,13 @@ namespace OrangeHRM.Hooks
         [BeforeScenario]
         public void BeforeScenario()
         {
-            CChromeOptions options = new ChromeOptions();
+            ChromeOptions options = new ChromeOptions();
             options.AddArgument("start-maximized");
             options.AddArgument("--disable-gpu");
             options.AddArgument("--headless");
             //options.AddArgument("--incognito");
             
-            new DriverManager().SetUpDriver(new ChromeConfig());
+            //new DriverManager().SetUpDriver(new ChromeConfig());
             Console.WriteLine("Setup");
 
             driver = new ChromeDriver(options);
